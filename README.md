@@ -4,7 +4,9 @@
 
   #### Step 1 : create the file 
 
-          notepad $PROFILE   // Note pad will open up
+          notepad $PROFILE   
+
+   Note pad will open up 
 
   #### Step 2 : The "Code"
 
