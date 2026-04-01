@@ -1,0 +1,20 @@
+function Invoke-DaddysHome {
+    param($action)
+    
+    if ($action -eq "home") {
+        Start-Process "code" -ArgumentList "."
+
+        $spotifyUri = "spotify:track:2zYzyRzz6pRmhPzyfMEC8s"
+        
+        Start-Process $spotifyUri
+
+        $githubUrl = "https://github.com/RitamRoa"
+        Start-Process "zen" -ArgumentList $githubUrl
+
+        Write-Host "Welcome back, Ritam. Let's get to work." -ForegroundColor Cyan
+    } else {
+        Write-Host "Usage: daddys home" -ForegroundColor Yellow
+    }
+}
+
+Set-Alias daddys Invoke-DaddysHome
